@@ -1,0 +1,461 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Amiko';
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    width: 10%;
+    margin: 7px 7px 7px 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  
+  .topnav a:hover {
+    background-color: gray;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: gray;
+    color: white;
+  }
+
+.section-1{
+    display: flex;
+    width: auto;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-shadow: 2px 2px black;
+    background-image: url('/resources/bg-1a.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-1 h1{
+    font-size: 50px;
+    margin-bottom: 0;
+}
+.section-1 h3{
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.home-animation{
+    animation-name: main-header;
+    animation-duration: 4s;
+}
+
+@keyframes main-header {
+  from {margin-left: -120vw;color: black;}
+  to {margin-left: 0;color: white;}
+}
+
+.section-2{
+    height: auto;
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-heading{
+    font-size: 50px;
+    text-shadow: 2px 2px grey;
+}
+
+.feature-cards{
+    display: flex;
+}
+.card{
+    height: auto;
+    width: 360px;
+    background-color: #f2f2f2;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.card img{
+    width: 360px;
+    height: 200px;
+}
+.card h3{
+    width: 360px;
+    color: green;
+    padding-left: 20px;
+}
+.card div{
+    width: 300px;
+    text-align: justify;
+    padding: 10px 20px 10px 20px;
+    font-size: 13.5px;
+    color: gray;
+}
+.card button{
+    width: 200px;
+    height: 45px;
+    color: white;
+    font-size: 17px;
+    border: 0;
+    margin: 20px 75px 20px 75px;
+    border-radius: 5px;
+}
+.card-1 button{
+    background-color: #178A27;
+    cursor: pointer;
+}
+.card-1 button:hover{
+    background-color: rgb(4, 78, 4);
+    transition-duration: 0.3s;
+}
+.card-2 button{
+    background-color: grey;
+    cursor: pointer;
+}
+.card-2 button:hover{
+    background-color: rgb(92, 88, 88);
+    transition-duration: 0.3s;
+}
+.card-3 button{
+    background-color: rgb(209, 68, 68);
+    cursor: pointer;
+}
+.card-3 button:hover{
+    background-color: rgb(95, 3, 3);
+    transition-duration: 0.3s;
+}
+.card-2 h3{
+    color: grey;
+}
+.card-3 h3{
+    color: rgb(209, 68, 68);
+}
+
+.column-cards{
+    display: flex;
+    justify-content: space-around;
+}
+.col-card{
+    display: flex;
+    flex-direction: column;
+    width: 555px;
+    height: auto;
+    background-color: #f2f2f2;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 50px;
+    align-items: center;
+    padding-bottom: 50px;
+}
+/* .col-card img{
+} */
+
+.col-card h3{
+    color: rgb(75, 73, 73);
+}
+
+.col-card div{
+    width: 500px;
+    text-align: justify;
+    padding: 10px 20px 10px 20px;
+    font-size: 13.5px;
+    color: gray;
+}
+
+.col-card button{
+    color: #666666;
+    background-color: white;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin-left: 275px;
+}
+
+.col-card button:hover{
+    background-color: #cdcdcd;
+    transition-duration: 0.3s;
+}
+
+.section-3{
+    height: auto;
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.parallax{
+    background-image: url("/resources/bg-2.jpg");
+    height: 325px;
+    width: 98.75vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px gray;
+}
+.parallax div{
+    text-align: center;
+    font-size: 18px;
+}
+
+.parallax-animation{
+    animation-name: services-div;
+    animation-duration: 4s;
+}
+
+@keyframes services-div{
+    from {margin-left: -120vw;color: black;}
+    to {margin-left: 0;color: white;}
+}
+
+.service-cards{
+    display: flex;
+    margin-top: 50px;
+}
+
+.scard{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 250px;
+    background-color: #f2f2f2;
+    margin-left: 15px;
+    margin-right: 15px;
+    align-items: center;
+}
+
+.scard img{
+    width: 250px;
+}
+
+.scard h3{
+    color: grey;
+}
+
+.scard div{
+    width: 200px;
+    text-align: left;
+    padding: 10px 20px 10px 20px;
+    font-size: 13.5px;
+    color: gray;
+}
+
+.scard button{
+    color: #666666;
+    background-color: white;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.scard button:hover{
+    background-color: #cdcdcd;
+    transition-duration: 0.3s;
+    color: #185b96;
+}
+
+.big-card{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 1090px;
+    background-color: #f2f2f2;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 35px;
+}
+
+.big-card img{
+    width: 1090px;
+}
+
+.big-card h3{
+    color: grey;
+    margin-left: 20px;
+}
+
+.big-card div{
+    width: 1000px;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 13.5px;
+    margin-top: -10px;
+    color: gray;
+}
+
+.big-card button{
+    color: #666666;
+    background-color: white;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 165px;
+    margin-left: 20px;
+}
+
+.big-card button:hover{
+    background-color: #cdcdcd;
+    transition-duration: 0.3s;
+    color: #185b96;
+}
+
+.parallax2{
+    background-image: url("/resources/bg-3.jpg");
+    height: 590px;
+    width: 98.75vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px black;
+    margin-top: 50px;
+}
+
+.text-area{
+    background-color:  rgba(242, 242, 242, 0.4);
+    border-radius: 5px;
+    color: #000;
+    text-shadow: none;
+    padding: 15px;
+    text-align: center;
+}
+
+.form-area{
+    margin-top: 20px;
+    display: grid;
+    grid-column-gap: 25px;
+    grid-row-gap: 15px;
+    grid-template-areas:"nameInput messageArea"
+                        "emailInput messageArea"
+                        "subjectInput messageArea"
+                        ". formButton"
+}
+
+.name-input{
+    grid-area: nameInput;
+}
+
+.email-input{
+    grid-area: emailInput;
+}
+
+.subject-input{
+    grid-area: subjectInput;
+}
+
+.message-area{
+    grid-area: messageArea;
+}
+
+.form-area button{
+    grid-area: formButton;
+    width: 115px;
+    padding: 14px 0px 14px 0px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    border-color: #ccc;
+    background: #262628;
+    transition: all 0.3s ease;
+    color: #fff;
+    cursor: pointer;
+}
+.form-area button:hover{
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.inputs{
+    background-color:  rgba(242, 242, 242, 0.4);
+    width: 425px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: text;
+}
+
+.inputs:focus{
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+
+::placeholder{
+    color: #000;
+    font-family: 'Amiko';
+}
+
+footer{
+    height: auto;
+    background-color: white;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h1{
+    color: rgb(85, 84, 84);
+    font-weight: lighter;
+}
+
+footer div{
+    color: rgb(145, 143, 143);
+    font-style: italic;
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.footer-info{
+    border-top: 0.5px solid lightgray;
+    padding: 20px 0px 20px 0px;
+    font-size: 13px;
+    width: 98.75vw;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(58, 53, 53);
+}
