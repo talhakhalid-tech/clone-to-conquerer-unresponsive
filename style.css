@@ -229,16 +229,6 @@ body{
     font-size: 18px;
 }
 
-.parallax-animation{
-    animation-name: services-div;
-    animation-duration: 4s;
-}
-
-@keyframes services-div{
-    from {margin-left: -120vw;color: black;}
-    to {margin-left: 0;color: white;}
-}
-
 .service-cards{
     display: flex;
     margin-top: 50px;
