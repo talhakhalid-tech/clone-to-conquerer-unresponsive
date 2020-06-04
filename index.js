@@ -3,7 +3,7 @@ const about = document.getElementById('about-a')
 const services = document.getElementById('services-a')
 const contact = document.getElementById('contact-a')
 home.addEventListener('click',()=>{
-    home.setAttribute("class", "active");
+    home.setAttribute("class", "active") ;
     about.removeAttribute('class')
     services.removeAttribute('class')
     contact.removeAttribute('class')
